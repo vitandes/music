@@ -1,9 +1,9 @@
-import { Parallax } from "./NavStyles";
+import "./banner.css";
 
 const MainBanner = () => {
   return (
     <>
-      <Parallax className="parallax-container">
+      <section className="parallax-container">
         <img src="src/assets/fondo-entero3.png" alt="Fondo entero" className="image1" />
 
         <div className="div-title"><h2 >Masterpiece Music <br/> in a Click</h2></div>
@@ -16,7 +16,7 @@ const MainBanner = () => {
         <img src="src/assets/3.png" alt="Capa 2" className="image4" />
 
         <img src="src/assets/4.png" alt="Capa 2" className="image5" />
-      </Parallax>
+      </section>
       <div className="empty"></div>
     </>
   );

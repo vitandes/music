@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 export const Nav = styled.nav`
   display: flex;
   justify-content: center;
@@ -14,8 +12,6 @@ export const Nav = styled.nav`
   transform: translate(-50%, -50%);
   z-index: 9999;
   width: 100vw;
-  
-  
 
    ul, .div-sign-in {
     list-style-type: none;
@@ -27,21 +23,11 @@ export const Nav = styled.nav`
     border: 1px solid #000000;
     height: 100%;
     background-color: #0000009b;
-     box-shadow: 0px 0px 18px 13px rgba(0,0,0,0.1);
-
-    
-    
-    
+    box-shadow: 0px 0px 18px 13px rgba(0,0,0,0.1);
   }
 
-   
-
   li {
-    
     padding: 7px 0px;
-    
-    
-    
   }
 
   a, .log-in{
@@ -57,7 +43,6 @@ export const Nav = styled.nav`
     background-color: #ffffffd7;
     border-radius: 5px;
     color: #000;
-    
   }
 
   .sign-in{
@@ -69,10 +54,7 @@ export const Nav = styled.nav`
     font-weight: 600;
   }
 
-   
-
   .sign-in:hover{
-   
     background: rgb(141,37,149);
     background: linear-gradient(341deg, #6f1d75 12%, #bf5223 100%);
     border-radius: 8px;
@@ -86,6 +68,3 @@ export const Nav = styled.nav`
   }
 `;
 
-export const Parallax = styled.div`
-   
-`

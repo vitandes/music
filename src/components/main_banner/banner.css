@@ -1,0 +1,148 @@
+.parallax-container {
+  position: relative;
+  height: var(--size-animation-range-banner);
+}
+
+.image1 {
+  animation: parallax1;
+  animation-timeline: scroll(root);
+  animation-range: 0 1200px;
+  z-index: 1;
+}
+
+/* Otra alternativa
+
+.div-title{
+  top: 20%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1;
+ 
+} */
+
+.div-title {
+  top: 10.5%;
+  left: 39.5%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1;
+  animation: parallax2;
+  animation-timeline: scroll(root);
+  animation-range: 0 1200px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: clamp(16px, 3.5vw, 48px);
+}
+
+.button-log-in {
+  border: 1px solid #fff;
+  padding: 10px 60px;
+  border-radius: 15px;
+  font-size: clamp(16px, 1.6vw + 4px, 32px);
+  /* background: rgb(141, 37, 149); */
+  background: #003e63f5;
+  color: #ffffff;
+  box-shadow: 0px 0px 12px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 7;
+  position: absolute;
+  top: calc(29% + ((1920px - 100vw) / 12));
+  left: 40.5%;
+  transform: translate(-50%, -50%);
+  animation: parallax2;
+  animation-timeline: scroll(root);
+  animation-range: 0 1200px;
+}
+
+.button-log-in:hover {
+  background: rgb(141, 37, 149);
+  background: linear-gradient(341deg, #6f1d75 12%, #bf5223 100%);
+}
+
+.image2 {
+  animation: parallax2;
+  animation-timeline: scroll(root);
+  animation-range: 0 1200px;
+  z-index: 2;
+}
+
+.image3 {
+  animation: parallax3;
+  animation-timeline: scroll(root);
+  animation-range: 0 1200px;
+  z-index: 3;
+}
+
+.image4 {
+  animation: parallax4;
+  animation-timeline: scroll(root);
+  animation-range: 0 1200px;
+  z-index: 4;
+}
+
+.image5 {
+  animation: parallax5;
+  animation-timeline: scroll(root);
+  animation-range: 0 1200px;
+  z-index: 4;
+}
+
+.parallax-container img {
+  position: absolute;
+  width: 100%;
+}
+
+@keyframes parallax1 {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(44rem);
+  }
+}
+
+@keyframes parallax2 {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(40rem);
+  }
+}
+
+@keyframes parallax3 {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(20rem);
+  }
+}
+
+@keyframes parallax4 {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(5rem);
+  }
+}
+
+@keyframes parallax5 {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(5rem);
+  }
+}
