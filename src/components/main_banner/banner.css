@@ -1,6 +1,8 @@
 .parallax-container {
   position: relative;
   height: var(--size-animation-range-banner);
+
+  
 }
 
 .image1 {

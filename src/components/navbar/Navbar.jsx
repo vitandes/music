@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Nav } from "./NavStyles";
 
 const Navbar = () => {
@@ -19,9 +20,12 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="div-sign-in">
-        <a href="#login" className="log-in">
+        {/* <a href="#login" className="log-in">
           Log In
-        </a>
+        </a> */}
+        <Link to="/login" className="log-in">
+          Log In
+        </Link>
         <a href="#signin" className="sign-in">
           Sig In
         </a>

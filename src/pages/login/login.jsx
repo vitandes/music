@@ -1,8 +1,10 @@
+import './login.css'
+
 const Login = ()=>{
     return (
-        <>
-            <h1>Login</h1>
-        </>
+        <section className="login-container">
+            <h1 >Login</h1>
+        </section>
     )
 }
 
