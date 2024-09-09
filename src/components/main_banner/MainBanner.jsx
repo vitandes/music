@@ -17,7 +17,7 @@ const MainBanner = () => {
 
         <img src="src/assets/4.png" alt="Capa 2" className="image5" />
       </section>
-      <div className="empty"></div>
+      
     </>
   );
 };

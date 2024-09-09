@@ -1,0 +1,77 @@
+.benefits{
+    height: fit-content;
+    background: linear-gradient(0deg, rgba(23,17,34,1) 72%, rgba(0,0,0,1) 100%);
+    z-index: 999;
+    position: relative;
+}
+
+
+
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    
+    gap: 10px;
+    
+    
+  }
+
+  .h2-benefits{
+    margin-top: 0;
+    padding-top: 60px;
+    font-size: var(--font-size-h2);
+  }
+  
+
+
+  
+  .card {
+    background-color: #231A32;
+    border: 2px solid #302447;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 20%;
+    height: fit-content;
+    margin: 10px;
+    margin-top: 60px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .icon{
+    font-size: 22px;
+   
+  }
+
+  
+  
+  .card:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.5),
+    0px 0px 30px 0px rgba(141,37,149,0.5),
+    0px 0px 50px 0px rgba(245,107,47,0.5); 
+    background-image: linear-gradient(341deg, rgba(141,37,149,1) 12%, rgba(245,107,47,1) 100%);
+    border: #fff solid 1px;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: var(--font-size-p);
+  }
+
+  .container-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    padding-bottom: 60px;
+
+    & .image-app{
+        width: 65%;
+        border-radius: 20px;
+        border: 10px solid #302447;
+    }
+  }
+
