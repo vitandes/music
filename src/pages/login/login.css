@@ -86,10 +86,15 @@ main {
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   & .form-wrapper {
     position: absolute;
-    inset: 12vh 10vw;
+    /* inset: 12vh 10vw; */
+    width: 80%;
+    max-width: 800px;
     margin: auto;
 
     & .header {
