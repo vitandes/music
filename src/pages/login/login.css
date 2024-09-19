@@ -1,3 +1,204 @@
-.login-container{
-    color: aqua;
+main {
+  font-size: 1.2rem;
+  background-color: var(--background-color);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: var(--font-family-primary);
+}
+
+.slide-one {
+  width: 80%;
+  color: var(--main-color-text);
+  display: flex;
+  height: 100%;
+  transition: transform 1s ease;
+
+  &.slide-move {
+    transform: translateX(25%);
+  }
+
+  & .message {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+    transition: transform 0.5s ease, opacity 0.8s ease;
+
+    & .message-caption {
+      height: 255px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    & h1 {
+      font-family: var(--font-family-secondary);
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: clamp(32px, 4vw, 46px);
+    }
+
+    & p {
+      line-height: 2rem;
+    }
+
+    & .btn-enter {
+      width: clamp(1rem, 80%, 300px);
+      height: clamp(2rem, 8vh, 80px);
+      font-size: 1.2rem;
+      border: 1px solid #fff;
+      background: transparent;
+      color: var(--main-color-text);
+      font-weight: 600;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.slide-two {
+  position: absolute;
+  background: var(--light-color);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  overflow: hidden;
+  transition: right 0.8s ease-out;
+
+  &.slide-move {
+    right: 40%;
+  }
+}
+
+.form-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  & .form-wrapper {
+    position: absolute;
+    inset: 12vh 10vw;
+    margin: auto;
+
+    & .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 200px;
+
+      & h1 {
+        font-family: var(--font-family-secondary);
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: clamp(32px, 4vw, 46px);
+        color: var(--third-color);
+        text-align: center;
+      }
+
+      & nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 8px;
+
+        & .menu-item {
+          width: 2.2rem;
+          height: 2.2rem;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          & svg {
+            fill: var(--background-color);
+          }
+
+          &:hover svg {
+            fill: var(--third-color);
+          }
+        }
+      }
+    }
+
+    .input-group {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr) 12vh;
+      gap: 12px;
+
+      & .input {
+        display: grid;
+        align-content: end;
+      }
+
+      & .forget-password-input {
+        place-items: center;
+
+        & .forget-link {
+          text-decoration: none;
+          color: var(--background-color);
+          font-size: 1.2rem;
+          font-weight: 700;
+        }
+      }
+      
+      label {
+        color: var(--gray-color);
+      }
+    }
+  }
+}
+
+input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--gray-color);
+  height: 3rem;
+  font-family: var(--font-family-secondary);
+  font-size: 1rem;
+}
+
+.button-input {
+  place-items: center;
+}
+
+button {
+  width: clamp(1rem, 80%, 300px);
+  height: clamp(2rem, 8vh, 80px);
+  font-size: 1.2rem;
+  background: var(--color-button-principal);
+  color: var(--main-color-text);
+  font-weight: 600;
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  /* box-shadow: 4px 4px 20px rgba(254, 127, 45, 0.55); */
+}
+
+.form-wrapper-one,
+.form-wrapper-two {
+  transition: transform 0.8s ease, opacity 1.4s ease;
+}
+
+.form-wrapper-hidden {
+  transform: translateX(200vw);
+  opacity: 0;
 }

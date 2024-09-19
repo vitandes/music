@@ -1,37 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap')
-;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap");
 
-
-:root{
-  --color-button-principal: linear-gradient(341deg, rgba(141,37,149,1) 12%, rgba(245,107,47,1) 100%);
-  --color-button-principal-hover:  linear-gradient(341deg, #6f1d75 12%, #bf5223 100%);
-  --background-color: #171122;
-  --background-color-cards: #231A32;
+:root {
+  --color-button-principal: linear-gradient(
+    341deg,
+    rgba(141, 37, 149, 1) 12%,
+    rgba(245, 107, 47, 1) 100%
+  );
+  --color-button-principal-hover: linear-gradient(
+    341deg,
+    #6f1d75 12%,
+    #bf5223 100%
+  );
   --background-color-cards-button: #302447;
-  --padding-button-big: 15px 60px;
-  --padding-ancla-menu: 7px 16px;
-  --main-color-text: #fff;
-  --secon-color-text: #000;
-  --third-color: rgb(141,37,149);
-  --size-animation-range-banner: 56.0vw;
-  --font-size-p: 16px;
+  --background-color-cards: #231a32;
+  --background-color: #171122;
+  --font-family-primary: "Oswald", sans-serif;
+  --font-family-secondary: "Readex Pro", sans-serif;
   --font-size-h1: 48px;
   --font-size-h2: 40px;
   --font-size-h3: 30px;
   --font-size-h4: 19px;
+  --font-size-p: 16px;
+  --light-color: #fdfffc;
+  --gray-color: #ababab;
+  --main-color-text: #fff;
+  --padding-ancla-menu: 7px 16px;
+  --padding-button-big: 15px 60px;
+  --secon-color-text: #000;
+  --size-animation-range-banner: 56vw;
+  --third-color: rgb(141, 37, 149);
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: "Oswald", sans-serif;
-    background-color: var(--background-color);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h3{
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--background-color);
+}
+
+h3 {
   color: var(--main-color-text);
   text-align: center;
   font-size: var(--font-size-h3);
   margin: 60px 0;
 }
-
